@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html><head data-page="Tw_Entrust_Post_Page" data-kw="" data-ppc="" data-new-ppc="" data-soj-php="">
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="applicable-device" content="mobile">
+        <meta name="keywords" content="北京卖房，发房，业主委托">
+<meta name="description" content="北京卖房频道，提供免费发布卖房房源信息，更快，更安全的卖房信息发布平台。每天海量用户访问安居客。安居客让卖房变得更简单。">
+        <title>北京卖房网，北京卖房信息发布，发布卖房信息的网站-58安居客</title>
+        <link rel="stylesheet" rev="stylesheet" href="up.css" type="text/css">
+
+        <script type="text/javascript">
+            window.APF={};
+            APF.info={
+                cityAlias:"bj",
+                pageName:"Tw_Entrust_Post_Page",
+            };
+        </script>
+
+    </head>
+    <body ontouchstart="">
+         <header class="list_header_container">
+    <div id="list_header">
+        <div class="H">
+            <a id="comBack" class=" soj back" href="http://m.gg.front.anjuke.test/bj" onclick="" tag="community" ref="1"><i class="g-icon"></i>返回</a> <span id="list_title" class="title">闪电卖房</span>
+            <div class="s1" style="display: none">
+                <input type="text" autocomplete="off" id="" value=""><i></i>
+            </div>
+            <div class="opsBtn">
+                                                <!-- 金融问答 start-->
+                        <!-- 金融问答 end-->
+                        </div>
+        </div>
+    </div>
+
+
+</header>
+<div class="CommonAutocompleteComponent" style="display: none;">
+    <div class="ipt-wrap">
+        <input type="text" class="ipt commonIpt" placeholder="请输入您的小区" value="">
+        <i class="search-icon"></i>
+        <button class="cancle-btn cancleBtn">取消</button>
+    </div>
+    <div class="ipted-wrap iptedWrap" style="display: none;">
+        <p class="ipted"></p>
+    </div>
+    <ul class="list commonAutoList"></ul>
+</div>
+<!-- 表单部分 -->
+<form class="form none" action="javascript:void(0);" id="form">
+    <!-- 第一步验证信息 -->
+    <div id="step-1">
+        <!-- 房源管理app -->
+        <a href="call-app-method://gotoSetting" class="app-manage none">点击这里去看看<em>我的房子</em></a>
+        <section class="title_wrap">
+            <img class="tit-img" src="http://pages_ajkcdn.gg.front.anjuke.test/touch/img/personal/noauth-top-bg.jpg">
+            <h1 class="tit-txt">截止到今日，已服务<em>2,147,483,647</em>位房东</h1>
+        </section>
+        <div class="tab-wrap re f0" id="tabSwitchWap">
+            <a class="active" href="javascript:void(0);">出售</a>
+            <a class="soj" href="/propsale/zu/" data-soj="rent_tw_tab">出租</a>
+        </div>
+        <ul class="form-warp">
+            <li class="init-item sel-item">
+                <label>您的小区</label>
+                <input type="hidden" id="comm_id" name="comm_id" value="">
+                <input type="hidden" id="comm_addr" name="comm_addr" value="">
+                <input type="text" class="int-text" id="search-comm" name="comm_name" placeholder="请输入您的小区">
+            </li>
+            <li class="init-item address-item" style="display: none;">
+                <label>小区地址</label>
+                <input type="text" class="int-text required" name="address" placeholder="请输入小区具体地址">
+            </li>
+            <li class="init-item">
+                <label>面积</label>
+                <input type="tel" class="int-text int-num required" name="area" placeholder="输入您的房屋面积">
+                <span class="unit-name">m²</span>
+            </li>
+             <li class="init-item multi-item" id="huxing">
+                <label>户型</label>
+                <input type="tel" class="int-text int-num required" name="hx-room" maxlength="1">
+                <span class="unit-name">室</span>
+                <input type="tel" class="int-text int-num required" name="hx-hall" maxlength="1">
+                <span class="unit-name">厅</span>
+                <input type="tel" class="int-text int-num required" name="hx-toilet" maxlength="1">
+                <span class="unit-name">卫</span>
+            </li>
+            <li class="init-item">
+                <label>售价</label>
+                <input type="tel" class="int-text int-num required" name="price" placeholder="输入您的房价">
+                <span class="unit-name">万</span>
+            </li>
+        </ul>
+        <span class="btn dis-btn" id="next-btn">下一步</span>
+    </div>
+    <!-- 第二步提交信息 -->
+    <div id="step-2" style="display: none;">
+        <ul class="form-warp">
+            <li class="init-item multi-item">
+                <label>楼栋门牌</label>
+                <input type="text" class="int-text int-num" name="building" maxlength="3">
+                <span class="unit-name">楼栋</span>
+                <input type="text" class="int-text int-num" name="unit" maxlength="4">
+                <span class="unit-name">单元</span>
+                <input type="text" class="int-text int-num" name="room" maxlength="5">
+                <span class="unit-name">号</span>
+            </li>
+            <li class="init-item sel-item">
+                <label>楼层</label>
+                <span class="int-text disabled">请选择楼层数</span>
+                <select data-err="请选择楼层">
+                    <option value="">请选择</option>
+                                            <option value="-3">-3楼</option>
+                                                <option value="-2">-2楼</option>
+                                                <option value="-1">-1楼</option>
+                                                <option value="1">1楼</option>
+                                                <option value="2">2楼</option>
+                                                <option value="3">3楼</option>
+                                                <option value="4">4楼</option>
+                                                <option value="5">5楼</option>
+                                                <option value="6">6楼</option>
+                                                <option value="7">7楼</option>
+                                                <option value="8">8楼</option>
+                                                <option value="9">9楼</option>
+                                                <option value="10">10楼</option>
+                                                <option value="11">11楼</option>
+                                                <option value="12">12楼</option>
+                                                <option value="13">13楼</option>
+                                                <option value="14">14楼</option>
+                                                <option value="15">15楼</option>
+                                                <option value="16">16楼</option>
+                                                <option value="17">17楼</option>
+                                                <option value="18">18楼</option>
+                                                <option value="19">19楼</option>
+                                                <option value="20">20楼</option>
+                                                <option value="21">21楼</option>
+                                                <option value="22">22楼</option>
+                                                <option value="23">23楼</option>
+                                                <option value="24">24楼</option>
+                                                <option value="25">25楼</option>
+                                                <option value="26">26楼</option>
+                                                <option value="27">27楼</option>
+                                                <option value="28">28楼</option>
+                                                <option value="29">29楼</option>
+                                                <option value="30">30楼</option>
+                                                <option value="31">31楼</option>
+                                                <option value="32">32楼</option>
+                                                <option value="33">33楼</option>
+                                                <option value="34">34楼</option>
+                                                <option value="35">35楼</option>
+                                                <option value="36">36楼</option>
+                                                <option value="37">37楼</option>
+                                                <option value="38">38楼</option>
+                                                <option value="39">39楼</option>
+                                                <option value="40">40楼</option>
+                                                <option value="41">41楼</option>
+                                                <option value="42">42楼</option>
+                                                <option value="43">43楼</option>
+                                                <option value="44">44楼</option>
+                                                <option value="45">45楼</option>
+                                                <option value="46">46楼</option>
+                                                <option value="47">47楼</option>
+                                                <option value="48">48楼</option>
+                                                <option value="49">49楼</option>
+                                                <option value="50">50楼</option>
+                                                <option value="51">51楼</option>
+                                                <option value="52">52楼</option>
+                                                <option value="53">53楼</option>
+                                                <option value="54">54楼</option>
+                                                <option value="55">55楼</option>
+                                                <option value="56">56楼</option>
+                                                <option value="57">57楼</option>
+                                                <option value="58">58楼</option>
+                                                <option value="59">59楼</option>
+                                                <option value="60">60楼</option>
+                                        </select>
+                <input type="hidden" name="myfloor">
+            </li>
+            <li class="init-item sel-item">
+                <label>总楼层</label>
+                <span class="int-text disabled">请选择楼总层数</span>
+                <select data-err="请选择总楼层">
+                    <option value="">请选择</option>
+                                            <option value="1">1楼</option>
+                                                <option value="2">2楼</option>
+                                                <option value="3">3楼</option>
+                                                <option value="4">4楼</option>
+                                                <option value="5">5楼</option>
+                                                <option value="6">6楼</option>
+                                                <option value="7">7楼</option>
+                                                <option value="8">8楼</option>
+                                                <option value="9">9楼</option>
+                                                <option value="10">10楼</option>
+                                                <option value="11">11楼</option>
+                                                <option value="12">12楼</option>
+                                                <option value="13">13楼</option>
+                                                <option value="14">14楼</option>
+                                                <option value="15">15楼</option>
+                                                <option value="16">16楼</option>
+                                                <option value="17">17楼</option>
+                                                <option value="18">18楼</option>
+                                                <option value="19">19楼</option>
+                                                <option value="20">20楼</option>
+                                                <option value="21">21楼</option>
+                                                <option value="22">22楼</option>
+                                                <option value="23">23楼</option>
+                                                <option value="24">24楼</option>
+                                                <option value="25">25楼</option>
+                                                <option value="26">26楼</option>
+                                                <option value="27">27楼</option>
+                                                <option value="28">28楼</option>
+                                                <option value="29">29楼</option>
+                                                <option value="30">30楼</option>
+                                                <option value="31">31楼</option>
+                                                <option value="32">32楼</option>
+                                                <option value="33">33楼</option>
+                                                <option value="34">34楼</option>
+                                                <option value="35">35楼</option>
+                                                <option value="36">36楼</option>
+                                                <option value="37">37楼</option>
+                                                <option value="38">38楼</option>
+                                                <option value="39">39楼</option>
+                                                <option value="40">40楼</option>
+                                                <option value="41">41楼</option>
+                                                <option value="42">42楼</option>
+                                                <option value="43">43楼</option>
+                                                <option value="44">44楼</option>
+                                                <option value="45">45楼</option>
+                                                <option value="46">46楼</option>
+                                                <option value="47">47楼</option>
+                                                <option value="48">48楼</option>
+                                                <option value="49">49楼</option>
+                                                <option value="50">50楼</option>
+                                                <option value="51">51楼</option>
+                                                <option value="52">52楼</option>
+                                                <option value="53">53楼</option>
+                                                <option value="54">54楼</option>
+                                                <option value="55">55楼</option>
+                                                <option value="56">56楼</option>
+                                                <option value="57">57楼</option>
+                                                <option value="58">58楼</option>
+                                                <option value="59">59楼</option>
+                                                <option value="60">60楼</option>
+
+                </select>
+                <input type="hidden" name="allfloor">
+            </li>
+            <li class="init-item sel-item">
+                <label>房屋类型</label>
+               <span class="int-text disabled">请选择房屋类型</span>
+                <select data-err="请选择房屋类型">
+                    <option value="">请选择</option>
+                                            <option value="2">老公房</option>
+                                                <option value="3">联排</option>
+                                                <option value="6">平房</option>
+                                                <option value="8">普通住宅</option>
+                                                <option value="10">酒店式公寓</option>
+                                                <option value="11">独栋别墅</option>
+                                                <option value="9">其他</option>
+                                        </select>
+                <input type="hidden" name="room_type">
+            </li>
+            <li class="init-item sel-item">
+                <label>装修</label>
+                <span class="int-text disabled">请选择房屋装修</span>
+                <select data-err="请选择房屋装修">
+                    <option value="">请选择</option>
+                                            <option value="1">毛坯</option>
+                                                <option value="2">普通装修</option>
+                                                <option value="3">精装修</option>
+                                                <option value="4">豪华装修</option>
+                                        </select>
+                <input type="hidden" name="room_decorate">
+            </li>
+            <li class="init-item sel-item">
+                <label>朝向</label>
+
+                <span class="int-text disabled">请选择房屋朝向</span>
+                <select data-err="请选择房屋朝向">
+                    <option value="">请选择</option>
+                                            <option value="1">东</option>
+                                                <option value="2">南</option>
+                                                <option value="3">西</option>
+                                                <option value="4">北</option>
+                                                <option value="5">东南</option>
+                                                <option value="6">东北</option>
+                                                <option value="7">西南</option>
+                                                <option value="8">西北</option>
+                                        </select>
+                <input type="hidden" name="room_toward">
+            </li>
+            <li class="init-item">
+                <label>联系方式</label>
+                <input type="tel" class="int-text required" name="phone" maxlength="11" placeholder="输入您的手机号码">
+            </li>
+            <li class="init-item none" id="code-box">
+                <label>图形验证码</label>
+                <input type="text" class="int-text required" name="code" maxlength="4" placeholder="输入图形验证码">
+                <img class="vimg" src="/v3/ajax/entrust/create/?action=getCaptcha&amp;r=0.123123123" width="60" height="30">
+            </li>
+            <li class="init-item">
+                <label>验证码</label>
+                <input type="tel" class="int-text required" name="vcode" maxlength="6" placeholder="输入手机验证码">
+                <a href="javascript:void(0);" class="getcode getcode-dis">获取验证码</a>
+            </li>
+        </ul>
+        <span class="btn dis-btn" id="submit_btn">立即委托</span>
+    </div>
+</form>
+<!-- 错误提示弹出信息 -->
+<div class="error-box">
+    <span class="error-msg" id="error-msg"></span>
+</div>
+<!-- 业主说&房源图片 -->
+<section class="other_wrap none-" id="other_wrap">
+    <div class="other-tit">补充下面信息，让买家更好了解您的房源</div>
+    <div class="other-item">
+        <p class="item-tit"><label>业主说</label>让买家更好的了解你的房子（选填）</p>
+            <textarea class="int-text" placeholder="输入0-300字" id="landlord-note" name="landlord-note" maxlength="300"></textarea>
+        <p class="l-tip"><em class="red-text">0</em>/300</p>
+        <input type="hidden" name="prop_id" value="">
+        <input type="hidden" name="safe_code" value="">
+    </div>
+    <div class="other-item">
+        <p class="item-tit"><label>房源图</label>更好展示您的房源</p>
+        <div class="upload-wrap" id="roomImgWrap">
+        <div class="img-upload-mod upImgBox">
+	<form class="fx-form">
+        <div class="up-img-box up-img-list">
+            <div class="file-button fileButton">
+                <i class="cross"></i>
+                <input type="file" class="opacity0 uploadBtn" multiple="multiple" accept="image/jpeg">
+            </div>
+        </div>
+        <div class="msg msg-hide errorMsg"><i class="fx-icon-result icon-fail"></i><span>错误提示</span></div>
+        <div class="hide imgmsg">注：图片较大,正在压缩上传,需耗时5-10秒</div>
+    </form>
+</div>
+
+<!-- 图片浏览 -->
+<div class="picpopu">
+    <div class="swipe-img swipeImg">
+        <div class="swipe-wrap-img wrapImg">
+        </div>
+    </div>
+    <div class="pichead"><i class="i_global i-detele"></i><span class="p_current">1</span>/<span class="p_total"></span><i class="i_global i_close"></i></div>
+</div>
+
+        </div>
+    </div>
+    <div class="btn-box">
+        <span class="btn break-btn" id="break_btn">跳过</span>
+        <span class="btn" id="finish_btn">完成</span>
+    </div>
+</section>
+
+<!-- tw发放成功 -->
+<section class="success_wrap none" id="success_wrap">
+    <div class="app-box">
+        <p class="success-tip"><i></i>恭喜您，委托成功！</p>
+        <p class="app-msg">请保持手机畅通，<br>工作人员会及时联系您，安排上门拍照。</p>
+        <h1 class="msg-tit">下载安居客APP，<br>全面掌握房源信息！</h1>
+        <a href="javascript:;" class="down-btn"><i class="down-icon"></i>下载APP查看买家出价</a>
+    </div>
+    <div class="moblie-img"></div>
+</section>
+
+<!-- app发放成功 -->
+<section class="success_app_wrap none" id="success_app_wrap">
+    <div class="suc-img"></div>
+    <div class="app-box">
+        <p class="success-tip">恭喜您，委托成功！</p>
+        <p class="app-msg">请保持手机畅通，工作人员会及时联系您！</p>
+        <a href="call-app-method://gotoSetting" class="down-btn">管理房源</a>
+    </div>
+</section>
+
+<!-- 返回按钮confirm弹出层 -->
+
+
+
+
+<script type="text/javascript" src="./swipe.js"></script>
+<script type="text/javascript" src="./Zepto.js"></script>
+<script type="text/javascript" src="./up.js"></script>
+<script type="text/vbscript">
+Function IEBinary_getByteAt(strBinary, iOffset)
+	IEBinary_getByteAt = AscB(MidB(strBinary, iOffset + 1, 1))
+End Function
+Function IEBinary_getBytesAt(strBinary, iOffset, iLength)
+  Dim aBytes()
+  ReDim aBytes(iLength - 1)
+  For i = 0 To iLength - 1
+   aBytes(i) = IEBinary_getByteAt(strBinary, iOffset + i)
+  Next
+  IEBinary_getBytesAt = aBytes
+End Function
+Function IEBinary_getLength(strBinary)
+	IEBinary_getLength = LenB(strBinary)
+End Function
+</script>
+
+<script type="text/javascript">
+
+        userTouch.compressUpload["#roomImgWrap" || "0"] = new userTouch.CompressUpload({
+            wrapperSlter : "#roomImgWrap",
+            maxNum       : +"10"   || 10,     // 一共可以上传多少张
+            uploadUrl    : "http://upd1.ajkimg.com/upload" || 'http://upd1.ajkimg.com/upload',
+            maxWidth     : ""  || 640,    // 图片的最大宽度，超出会压缩
+            maxHeight    : "" || 640,    // 图片的最大高度，超出会压缩
+            onceMaxNum   : "3"           // 一次性最多同时上传多少张
+        });
+
+    var noauth = new touch.entrust.Noauth({
+        manageLink : 'call-app-method://anjukeLogInAndRegister',
+        userId   : "",
+        cityId   : "14",
+        phoneNum : "",
+
+        ajaxUrl : "/v3/ajax/entrust/create/",//非实勘ajax接口
+        iphoneAPPUrl  : "http://stats.anjuke.com/v2/l/ac?t=mobile&pm=a01page&u=http://itunes.apple.com/cn/app/id415606289?mt=8",
+        androidAPPUrl : "http://android.anjuke.com/getapkx.php?app=Anjuke&pm=b95&b95.apk"
+    });
+    new touch.component.header.BackTopBar();
+    // 小区搜索
+    new touch.component.module.CommonAutocomplete({
+            autoCommonApi : "http://m.gg.front.anjuke.test/bj/anjuke/suggest/",
+            limit : "10",
+            openSlter : "#search-comm",
+            iptedClickCallback : function(clickedNode) {
+                $('input[name="comm_id"]').val('');
+                $('input[name="comm_addr"]').val('');
+                $('input[name="address"]').val('');
+                noauth.checkStep1();
+                $('.address-item').show();
+            },
+            autodClickCallback : function(clickedNode) {
+                $('input[name="comm_id"]').val($(clickedNode).attr('data-commonid'));
+                $('input[name="comm_addr"]').val($(clickedNode).find('.common-address').text());
+
+                noauth.checkStep1();
+                $('.address-item').hide();
+            }
+        });
+
+
+</script><div class="g-d-dialog"><div class="confirm-box" style="display: none;">
+    <span class="close-btn"></span>
+    <p class="conf-tit">放弃委托</p>
+    <p class="conf-msg">房源未发布，确认放弃委托？</p>
+    <div class="conf-btn">
+        <span class="ok-btn">确认</span>
+        <span class="qx-btn">取消</span>
+    </div>
+</div></div>
+        <!--百度统计-->
+        <script type="text/javascript">
+            var _hmt = _hmt || [];
+            window._hmt = _hmt;
+            window.perfConfig = {
+                pageName : "Tw_Entrust_Post_Page",
+                siteName : 'ershoutouch'
+            };
+        </script>
+                    <script type="text/javascript" async="" defer="" src="http://hm.baidu.com/hm.js?d3e6ebed001da95304bcf4271eba64de"></script>
+                <script src="http://pages.aifcdn.com/prism/performance.js?v=1456202590" async="" defer=""></script>
+
+
+
+</body></html>
